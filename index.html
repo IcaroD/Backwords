@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backwords</title>
+</head>
+<body>
+    <textarea type="text" id="area" cols="100" rows="10">oi</textarea>
+
+    <button onclick="back()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+
+        function back(){
+            var word = document.getElementById("area").value;
+            var list = word.split('');
+
+            list = list.reverse();
+
+            document.getElementById("demo").innerHTML = list.join('');
+        }
+
+    </script>
+</body>
+</html>
