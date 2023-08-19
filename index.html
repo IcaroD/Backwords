@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Backwords</title>
 </head>
 <body>
-    <textarea type="text" id="area" cols="100" rows="10"></textarea>
 
-    <button onclick="back()">Try it</button>
+    <header><h1>Backwords</h1></header>
 
-    <p id="demo"></p>
+    <main>
+        <h2>Exemple</h2>
+        <p><strong>"oi" &rarr; "io"</strong></p>
+    </main>
+
+    <div class="content">
+        <textarea type="text" id="area" cols="100" rows="10"></textarea>
+
+        <button class="button" onclick="back()">Try it</button>
+
+        <h3 id="demo"></h3>
+    </div>
 
     <script src="script.js"></script>
 
